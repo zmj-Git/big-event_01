@@ -1,6 +1,6 @@
 $(function () {
     //1.获取用户信息
-    getUserInof();
+    getUserInfo();
     //2.退出
     var layer = layui.layer;
     $("#btnLogout").on("click", function () {
@@ -11,7 +11,7 @@ $(function () {
         });
     })
 });
-function getUserInof() {
+function getUserInfo() {
     $.ajax({
         url: "/my/userinfo",
         // //headers属性：用户设置请求头信息
